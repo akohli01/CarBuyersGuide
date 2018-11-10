@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<title>Contact Us</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="This webpage allows users to submit feedback to The Car Buyer's Guide.">
+		<meta name="keywords"   content="Feedback Form, Contact us, Describe feedback">
+		<meta name="author" content="Amit Kohli">
+		<link rel="icon" type="image/png" href="favicon-32x32.png"  />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script type="text/javascript">
+				function validateForm() {
+				var x = document.forms["feedback"]["fname"].value;
+				if (x == null || x == "") {
+					alert(" First Name must be filled out");
+					return false;
+				}
+				var x = document.forms["feedback"]["lname"].value;
+				if (x == null || x == "") {
+					alert(" Last name must be filled out");
+					return false;
+				}
+				var x=document.feedback.email.value;  
+				var atposition=x.indexOf("@");  
+				var dotposition=x.lastIndexOf(".");  
+				if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+				alert("Please enter a valid e-mail address.");  
+				return false;  
+			  } 
+
+			 
+
+
+			}
+		
+		var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+				function GetClock(){
+				var d=new Date();
+				var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+				if(nyear<1000) nyear+=1900;
+
+				var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+				if(nhour==0){ap=" AM";nhour=12;}
+				else if(nhour<12){ap=" AM";}
+				else if(nhour==12){ap=" PM";}
+				else if(nhour>12){ap=" PM";nhour-=12;}
+
+				if(nmin<=9) nmin="0"+nmin;
+				if(nsec<=9) nsec="0"+nsec;
+
+				document.getElementById('date').innerHTML=""+tmonth[nmonth]+" "+ndate+", "+nyear+" ";
+				document.getElementById('clock').innerHTML=" "+nhour+":"+nmin+":"+nsec+ap+"";
+				}
+
+
+
+				window.onload=function(){
+				GetClock();
+				setInterval(GetClock,1000);
+				}
+		
+		
+		
+		
+   </script>
+	</head>
+	
+
+	<body id="wrapper">
+		<div id="middle">
+		<header>
+			<a href="index.html"><img src="car.png" alt="Company logo" id="left" title="Link to home page"></a>
+			<div id="timestamp">
+			<div id="date"></div>
+			<div id="clock"></div>
+			</div>
+			<h1>The Car Buyer's Guide</h1>
+			<h3 id="h3">Years 2006-2017</h3>
+			
+			<ul class="ull">
+				<li class="lli"><a href="index.html" class="red">Home</a></li>
+				<li class="lli"><a href="about.html" class="red">About this website</a></li>
+				<li class="lli"><a href="key.html" class="red">Factors to consider</a></li>
+				<li class="lli"><a href="first-set.html" class="red">Years 2006-2009</a></li>
+				<li class="lli"><a href="second-set.html" class="red">Years 2010-2013</a></li>
+				<li class="lli"><a href="third-set.html" class="red">Years 2014-2017</a></li>
+				<li class="lli"><a href="contact.html" class="red">Contact Us</a></li>
+			</ul>
+			
+		</header>
+		
+		<main>
+			<h2 class="lefft">Contact Us</h2>
+		<h3 id="ftitle">Feedback Form</h3>	
+		<form name="feedback" enctype="text/plain" method="post" action="mailto:amitkohli12@yahoo.com?subject=Feedback_form" onsubmit="return validateForm()">  
+		<label for="fname">First Name: </label> <input type="text" name="fname" id="fname"><br><br>
+		<label for="lname">Last Name: </label> <input type="text" name="lname" id="lname"><br><br>
+		<label for="email">Email: </label> <input type="text" name="email" id="email"><br><br>
+		<label for="feedback_type">Feedback Type: </label> 
+		<input type="radio" name="feedtype" id="feedback_type" title="Questions" checked>Questions
+						<input type="radio" name="feedtype" id="feedtype2" title="Comments">Comments
+						<input type="radio" name="feedtype" id="feedtype3" title="Suggestions">Suggestions 
+						<input type="radio" name="feedtype" id="feedtype4" title="Other">Other<br><br>
+		<fieldset>
+		<legend>Describe feedback:</legend>
+		<textarea rows="10" cols="70" name="comment">
+		</textarea>
+		</fieldset>
+	
+		<input type="reset" value="Reset">
+		<input type="submit" value="Submit" >
+		</form>
+			
+		</main>
+		<hr>
+		<footer>
+		<div class="left">
+		<h3 id="lheading">Alternate links</h3>
+			<ol>
+				
+				<li class="bl"><a href="index.html" class="bla u">Home</a></li>
+				<li class="bl"><a href="about.html" class="bla u">About this website</a></li>
+				<li class="bl"><a href="key.html" class="bla u">Factors to consider</a></li>
+				<li class="bl"><a href="first-set.html" class="bla u">Years 2006-2009</a></li>
+				<li class="bl"><a href="second-set.html" class="bla u">Years 2010-2013</a></li>
+				<li class="bl"><a href="third-set.html" class="bla u">Years 2014-2017</a></li>
+				<li class="bl"><a href="contact.html" class="bla u">Contact Us</a></li>
+			</ol>
+		</div>
+				
+		   <p class="right">
+		   <span>
+		   <a href="http://validator.w3.org/check?uri=referer" class="none">
+			<img src="valid_html5.gif" alt="Html Validator image"></a>
+			&nbsp;
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" class="none">
+			<img src="valid_css.gif" alt="CSS validator image" /></a>
+			</span>
+			<br>
+			<span class="conclusion">
+			Website Creator: Amit Kohli
+			<br>
+			Email:  <a href="mailto:amitkohli12@yahoo.com" title="Click to open default mail client">amitkohli12@yahoo.com</a>
+			<br>
+			&copy; 2016 The Car Buyer's Guide Inc. All rights reserved.
+			</span>
+			
+			
+			</p>
+		
+		
+			
+			
+			
+		</footer>
+		</div>
+	</body>

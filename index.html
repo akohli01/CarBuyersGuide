@@ -1,0 +1,340 @@
+<!DOCTYPE html>                                                                                                                                                                                                                                                                                                                                                                                    
+
+<html lang="en">
+	
+	<head>
+		<title>Welcome to The Car buyer's guide-Home Page</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="This website helps car buyers choose the type of vehicle that meets their needs and wants.">
+		<meta name="keywords"   content="Honda, Toyota, Mazda, Ford, Chevrolet, Top picks">
+		<meta name="author" content="Amit Kohli">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" />
+		<script type="text/javascript">
+				var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+				function GetClock(){
+				var d=new Date();
+				var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+				if(nyear<1000) nyear+=1900;
+
+				var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+				if(nhour==0){ap=" AM";nhour=12;}
+				else if(nhour<12){ap=" AM";}
+				else if(nhour==12){ap=" PM";}
+				else if(nhour>12){ap=" PM";nhour-=12;}
+
+				if(nmin<=9) nmin="0"+nmin;
+				if(nsec<=9) nsec="0"+nsec;
+
+				document.getElementById('date').innerHTML=""+tmonth[nmonth]+" "+ndate+", "+nyear+" ";
+				document.getElementById('clock').innerHTML=" "+nhour+":"+nmin+":"+nsec+ap+"";
+				
+				}
+
+
+
+				window.onload=function(){
+				GetClock();
+				setInterval(GetClock,1000);
+				}
+		</script>
+		
+		
+	</head>
+	
+
+	<body id="wrapper">
+		<div id="middle">
+		<header>
+			<a href="index.html"><img src="car.png" alt="Company logo" id="left" title="Link to home page"></a>
+			<div id="timestamp">
+			<div id="date"></div>
+			<div id="clock"></div>
+			</div>
+			<h1>The Car Buyer's Guide</h1>
+			<h3 id="h3">Years 2006-2017</h3>
+		
+			
+			<ul class="ull">
+				<li class="lli"><a href="index.html" class="red">Home</a></li>
+				<li class="lli"><a href="about.html" class="red">About this website</a></li>
+				<li class="lli"><a href="key.html" class="red">Factors to consider</a></li>
+				<li class="lli"><a href="first-set.html" class="red">Years 2006-2009</a></li>
+				<li class="lli"><a href="second-set.html" class="red">Years 2010-2013</a></li>
+				<li class="lli"><a href="third-set.html" class="red">Years 2014-2017</a></li>
+				<li class="lli"><a href="contact.html" class="red">Contact Us</a></li>
+			</ul>
+			
+		</header>
+		
+		<main>
+			<h2>Our Top Picks</h2>
+			
+				
+					<div id="head">
+					<h4 class="h" id="lt">Car</h4>
+					<h4 class="h" id="lt2">Van</h4>
+					<h4 class="h" id="lt3">SUV</h4>
+					<h4 class="h" id="lt4">Pickup Truck</h4>
+					<h4 class="h" id="lt5">Sports Car</h4>
+					</div>
+					<br>
+					
+					<article class="clear">
+					
+					<a href="third-set.html#camry" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/camry.png" alt="Toyota Camry">
+					<figcaption>Toyota Camry</figcaption>
+					</figure> </a>
+					
+					
+		
+					
+					<a href="first-set.html#sienna" title="Click link for more information">
+					<figure class="figuree">
+					<img src="home/sienna.png" alt="Toyota Sienna">
+					<figcaption>Toyota Sienna</figcaption>
+					</figure></a>
+			
+			
+					<a href="first-set.html#highlander" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/highlander.png" alt="Toyota Higlander">
+					<figcaption>Toyota Highlander</figcaption>
+					</figure></a>
+				
+	
+					<a href="first-set.html#tacoma" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/tacoma.png" alt="Toyota Tacoma">
+					<figcaption>Toyota Tacoma</figcaption>
+					</figure></a>
+			
+				
+					<a href="first-set.html#spyder" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/spyder.png" alt="Toyota MR2 Spyder">
+					<figcaption>Toyota MR2 Spyder </figcaption>
+					</figure></a>
+					<h3 class="brand bl">Toyota</h3>
+					
+					</article>
+			
+					<article class="clear">
+					<hr>
+					
+					<a href="first-set.html#civic" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/civic.png" alt="Honda Civic">
+					<figcaption>Honda Civic</figcaption>
+					</figure></a>
+					
+				
+					<a href="second-set.html#odyssey" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/odyssey.png" alt="Honda Odyssey">
+					<figcaption>Honda Odyssey</figcaption>
+					</figure></a>
+				
+	
+					<a href="third-set.html#cr-v" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/cr-v.png" alt="Honda CR-V">
+					<figcaption>Honda CR-V</figcaption>
+					</figure></a>
+				
+					
+					<a href="second-set.html#ridgeline" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/ridgeline.png" alt="Honda Ridgeline">
+					<figcaption>Honda Ridgeline</figcaption>
+					</figure></a>
+				
+
+					<a href="first-set.html#S2000" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/S2000.png" alt="Honda S2000">
+					<figcaption>Honda S2000</figcaption>
+					</figure></a>
+					<h3 class="brand bl">Honda</h3>
+				</article>
+			
+		
+				
+					
+					<article class="clear">
+					<hr>
+					
+					<a href="first-set.html#mazda3" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/mazda3.png" alt="Mazda Mazda3">
+					<figcaption>Mazda Mazda3</figcaption>
+					</figure></a>
+				
+					
+					<a href="second-set.html#mazda5" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/mazda5.png" alt="Mazda Mazda5">
+					<figcaption>Mazda Mazda5</figcaption>
+					</figure></a>
+				
+				
+					<a href="third-set.html#cx-5" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/cx-5.png" alt="Mazda CX-5">
+					<figcaption>Mazda CX-5</figcaption>
+					</figure></a>
+			
+					<a href="first-set.html#b2300" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/b2300.png" alt="Mazda B2300">
+					<figcaption>Mazda B2300</figcaption>
+					</figure></a>
+				
+					<a href="second-set.html#mx-5" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/mx-5.png" alt="Mazda MX-5">
+					<figcaption>Mazda MX-5</figcaption>
+					</figure></a>
+					<h3 class="brand bl">Mazda</h3>
+				</article>
+			
+			
+				<article class="clear">
+					<hr>
+					<a href="third-set.html#focus" title="Click the figure for more information">
+					<figure class="figuree"> 
+					<img src="home/focus.png" alt="Ford Focus">
+					<figcaption>Ford Focus</figcaption>
+					</figure></a>
+				
+					<a href="third-set.html#transit" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/transit.png" alt="Ford Transit">
+					<figcaption>Ford Transit</figcaption>
+					</figure></a>
+				
+					
+					<a href="first-set.html#escape" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/escape.png" alt="Ford Escape">
+					<figcaption>Ford Escape</figcaption>
+					</figure></a>
+				
+					
+					<a href="first-set.html#f150" title="Click here for more information">
+					<figure class="figuree">
+					<img src="home/f-150.png" alt="Ford F-150">
+					<figcaption>Ford F-150</figcaption>
+					</figure></a>
+
+					<a href="first-set.html#mustang" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/mustang.png" alt="Ford Mustang">
+					<figcaption>Ford Mustang</figcaption>
+					</figure></a>
+					 <h3 class="brand bl">Ford</h3>
+				</article>
+			
+		
+				<article class="clear">
+				 <hr>
+					<a href="third-set.html#impala" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/impala.png" alt="Chevrolet Impala">
+					<figcaption>Chevrolet Impala</figcaption>
+					</figure></a>
+				
+					
+					<a href="third-set.html#express" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/express.png" alt="Chevrolet Express Passenger Van">
+					<figcaption>Chevrolet Express <br>Passenger Van</figcaption>
+					</figure></a>
+				
+					<a href="second-set.html#traverse" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/traverse.png" alt="Chevrolet Traverse">
+					<figcaption>Chevrolet Traverse</figcaption>
+					</figure></a>
+				
+					
+					<a href="third-set.html#colorado" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/colorado.png" alt="Chevrolet Colorado">
+					<figcaption>Chevrolet Colorado</figcaption>
+					</figure></a>
+				
+					<a href="third-set.html#camaro" title="Click the figure for more information">
+					<figure class="figuree">
+					<img src="home/camaro.png" alt="Chevrolet Camaro">
+					<figcaption>Chevrolet Camaro</figcaption>
+					</figure></a>
+					<h3 class="brand bl">Chevrolet</h3>
+					<hr>
+				</article>
+			<h3 id="vid">Supporting videos</h3>
+			
+				<p id="side">1. Best car: 2016 Toyota Camry <br>
+							 2. Best van: 2017 Honda Odyssey <br>
+							 3. Best SUV: 2015 Honda CR-V   <br>
+						     4. Best pickup truck: 2016 Chevrolet Colorado<br>
+							 5. Best sports car: 2015-16 Ford Mustang GT
+			    </p>
+			
+			<iframe width="330" height="250" src="https://www.youtube.com/embed/tCJYCihNmvM" title="Toyota Camry review"  allowfullscreen></iframe>
+			<iframe width="330" height="250" src="https://www.youtube.com/embed/DUAru_6uN4g" title=" Honda Odyssey review"	allowfullscreen></iframe>
+			<iframe width="330" height="250" src="https://www.youtube.com/embed/qKNSRh0F73A" title="Honda CR-V review" allowfullscreen></iframe>
+			<iframe width="330" height="250" src="https://www.youtube.com/embed/1ATJXQY-tbA" title="Chevrolet Colorado review" allowfullscreen></iframe>
+			<iframe width="330" height="250" src="https://www.youtube.com/embed/T8bORibtOFI"  title="Ford Mustang review" allowfullscreen></iframe>
+		</main>
+		<br>
+		<hr>
+		<footer>
+		<div class="left">
+		<h3 id="lheading">Alternate links</h3>
+			<ol>
+				<li class="bl"><a href="index.html" class="bla u">Home</a></li>
+				<li class="bl"><a href="about.html" class="bla u">About this website</a></li>
+				<li class="bl"><a href="key.html" class="bla u">Factors to consider</a></li>
+				<li class="bl"><a href="first-set.html" class="bla u">Years 2006-2009</a></li>
+				<li class="bl"><a href="second-set.html" class="bla u">Years 2010-2013</a></li>
+				<li class="bl"><a href="third-set.html" class="bla u">Years 2014-2017</a></li>
+				<li class="bl"><a href="contact.html" class="bla u">Contact Us</a></li>
+			</ol>
+		</div>
+			<p id="fp"><b>&#42;Users please note:</b> I have not included all the car manufacturers on this page. If there are any
+					 additional car manufacturers you would like for me to include, please fill out the feedback form on the 
+					contact page and submit it. I will review all suggestions, personally.
+			</p>	
+           <p class="right">
+		   <span>
+		   <a href="http://validator.w3.org/check?uri=referer" class="none">
+			<img src="valid_html5.gif" alt="Html Validator image"></a>
+			&nbsp;
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" class="none">
+			<img src="valid_css.gif" alt="CSS validator image" /></a>
+			</span>
+			<br>
+			<span class="conclusion">
+			Website Creator: Amit Kohli
+			<br>
+			Email: <a href="mailto:amitkohli12@yahoo.com" title="Click to open default mail client">amitkohli12@yahoo.com</a>
+			<br>
+			&copy; 2016 The Car Buyer's Guide Inc. All rights reserved.
+			</span>
+			
+			
+			</p>
+		
+		
+	
+			
+			
+		</footer>
+		</div>
+	</body>
+</html>

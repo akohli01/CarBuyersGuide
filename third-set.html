@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<title>Years 2014-2017</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="This webpage contains select cars from the years 2014-2017 along with their specifications.">
+		<meta name="keywords"   content="Compact cars, Mid-size cars, Full-size cars, Sports Cars, Compact SUV's, Mid-size SUV's, Minivans, Pickup Trucks">
+		<meta name="author" content="Amit Kohli">
+		<link rel="icon" type="image/png" href="favicon-32x32.png"  />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+		<script type="text/javascript">
+				var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+				function GetClock(){
+				var d=new Date();
+				var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+				if(nyear<1000) nyear+=1900;
+
+				var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+				if(nhour==0){ap=" AM";nhour=12;}
+				else if(nhour<12){ap=" AM";}
+				else if(nhour==12){ap=" PM";}
+				else if(nhour>12){ap=" PM";nhour-=12;}
+
+				if(nmin<=9) nmin="0"+nmin;
+				if(nsec<=9) nsec="0"+nsec;
+
+				document.getElementById('date').innerHTML=""+tmonth[nmonth]+" "+ndate+", "+nyear+" ";
+				document.getElementById('clock').innerHTML=" "+nhour+":"+nmin+":"+nsec+ap+"";
+				}
+
+
+
+				window.onload=function(){
+				GetClock();
+				setInterval(GetClock,1000);
+				}
+</script>
+		
+	</head>
+	
+
+	<body id="wrapper">
+		<div id="middle">
+		<header>
+			<a href="index.html"><img src="car.png" alt="Company logo" id="left" title="Link to home page"></a>
+			<div id="timestamp">
+			<div id="date"></div>
+			<div id="clock"></div>
+			</div>
+			<h1>The Car Buyer's Guide</h1>
+			<h3 id="h3">Years 2006-2017</h3>
+			
+			<ul class="ull">
+				<li class="lli"><a href="index.html" class="red">Home</a></li>
+				<li class="lli"><a href="about.html" class="red">About this website</a></li>
+				<li class="lli"><a href="key.html" class="red">Factors to consider</a></li>
+				<li class="lli"><a href="first-set.html" class="red">Years 2006-2009</a></li>
+				<li class="lli"><a href="second-set.html" class="red">Years 2010-2013</a></li>
+				<li class="lli"><a href="third-set.html" class="red">Years 2014-2017</a></li>
+				<li class="lli"><a href="contact.html" class="red">Contact Us</a></li>
+			</ul>
+			
+		</header>
+		
+		<main>
+			<h4>Years: 2014-2017</h4>
+			<hr>
+		<h6>Quick Navigation</h6>	
+		<ul class="quick">
+			<li><a href="#compact">Compact Cars</a></li>
+			<li><a href="#mid">Mid-size Cars</a></li>
+			<li><a href="#full">Full-size Cars</a></li>
+			<li><a href="#sport">Sports Cars</a></li>
+			<li><a href="#compacts">Compact SUVs</a></li>
+			<li><a href="#mids">Mid-size SUVs</a></li>
+			<li><a href="#fulls">Full-size SUVs</a></li>
+			<li><a href="#mini">Minivans</a></li>
+			<li><a href="#pick">Pickup Trucks</a></li>
+		</ul>
+			
+		<hr>
+		<h5 id="compact">Compact Cars</h5>
+		<hr>	
+		
+			<article class="clear" id="focus">
+				<figure class="test1">
+			<img src="third/focus1.png" alt="Ford Focus">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2016 Ford Focus</li>
+					<li>Fuel economy (City/Highway): 19-30/25-42</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 5 speed manual</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			<figure class="test1">
+			<img src="third/verano1.png" alt="Buick Verano">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2015 Buick Verano</li>
+					<li>Fuel economy (City/Highway): 20-21/30-32</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			
+			<figure class="test1">
+			<img src="third/fit1.png" alt="Honda Fit">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2017 Honda Fit</li>
+					<li>Fuel economy (City/Highway): 29-33/36-40</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 6 speed manual</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+		
+		
+		
+		<hr>
+		<h5 id="mid">Mid-size Cars</h5>
+		<hr>
+		
+				<figure class="test1" id="camry">
+			<img src="third/camry1.png" alt="Toyota Camry">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2014 Toyota Camry</li>
+					<li>Fuel economy (City/Highway): 21-25/31-35</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4 </li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+				<figure class="test1">
+			<img src="third/passat1.png" alt="Volkswagon Passat">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2015 Volkswagon Passat</li>
+					<li>Fuel economy (City/Highway): 20-30/28-44</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4 </li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 5 speed manual</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+			<figure class="test1">
+			<img src="third/regal1.png" alt="Buick Regal">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2016 Buick Regal</li>
+					<li>Fuel economy (City/Highway): 19-21/27-31</li>
+					<li>Engine type: Flex-fuel (ffv)</li>
+					<li>Cylinders: Inline 4 </li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+		
+		
+		
+		<hr>
+		<h5 id="full">Full-size cars</h5>
+		<hr>
+		
+			<figure class="test1" id="impala">
+			<img src="third/impala1.png" alt="Chevrolet Impala">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2016 Chevrolet Impala</li>
+					<li>Fuel economy (City/Highway): 17-22/25-31</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			
+			<figure class="test1">
+			<img src="third/lacrosse1.png" alt="Buick LaCrosse">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2017 Buick LaCrosse</li>
+					<li>Fuel economy (City/Highway): 20-21/29-31</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: V6</li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 8 speed semi-automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			
+			<figure class="test1">
+			<img src="third/cadenza1.png" alt="Kia Cadenza">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2015 Kia Cadenza</li>
+					<li>Fuel economy (City/Highway): 19/28</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: V6</li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			
+			
+		<hr>
+		<h5 id="sport">Sports Cars</h5>
+		<hr>
+		
+			<figure class="test1" id="camaro">
+			<img src="third/camaro1.png" alt="Chevrolet Camaro">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2016 Chevrolet Camaro</li>
+					<li>Fuel economy (City/Highway): 16-22/25-31</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 4</li>
+					<li>Transmision: 6 speed manual</li>
+					<li>Drive wheel type: Rear wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+
+				
+			<figure class="test1">
+			<img src="third/brz1.png" alt="Subaru BRZ">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2014 Subaru BRZ</li>
+					<li>Fuel economy (City/Highway): 22-25/30-34</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Flat 4</li>
+					<li>Total seating: 4</li>
+					<li>Transmision: 6 speed manual</li>
+					<li>Drive wheel type: Rear wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+			<figure class="test1">
+			<img src="third/fr-s-1.png" alt="Scion FR-S">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2015 Scion FR-S</li>
+					<li>Fuel economy (City/Highway): 22-25/30-34</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Flat 4</li>
+					<li>Total seating: 4</li>
+					<li>Transmision: 6 speed manual</li>
+					<li>Drive wheel type: Rear wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+		
+		<hr>
+		<h5 id="compacts">Compact SUVs</h5>
+		<hr>	
+		
+				<figure class="test1" id="cr-v">
+			<img src="third/cr-v-1.png" alt="Honda CR-V">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2016 Honda CR-V</li>
+					<li>Fuel economy (City/Highway): 25-26/31-32</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 5</li>
+					<li>Transmision: Continuously Variable-speed Automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			<figure class="test1">
+			<img src="third/tucson1.png" alt="Hyundai Tucson">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2017 Hyundai Tucson</li>
+					<li>Fuel economy (City/Highway): 21-26/26-32</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+		
+		<figure class="test1" id="cx-5">
+			<img src="third/cx-5-1.png" alt="Mazda CX-5">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2015 Mazda CX-5</li>
+					<li>Fuel economy (City/Highway): 24-26/30-35</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 5</li>
+					<li>Transmision: 6 speed manual</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+		
+		<hr>
+		<h5 id="mids">Mid-size SUVs</h5>
+		<hr>
+		
+				<figure class="test1">
+			<img src="third/pilot1.png" alt="Honda Pilot">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2016 Honda Pilot</li>
+					<li>Fuel economy (City/Highway): 18-20/26-27</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: V6</li>
+					<li>Total seating: 7-8</li>
+					<li>Transmision: 6 speed automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			
+			<figure class="test1">
+			<img src="third/enclave1.png" alt="Buick Enclave">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2014 Buick Enclave</li>
+					<li>Fuel economy (City/Highway): 16-17/22-24</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: V6</li>
+					<li>Total seating: 7</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: All wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			
+			<figure class="test1">
+			<img src="third/santa-fe-1.png" alt="Hyundai Santa Fe">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2017 Santa Fe</li> 
+					<li>Fuel economy (City/Highway): 17-21/23-28</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: V6</li>
+					<li>Total seating: 5-7</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+		<hr>
+		<h5 id="fulls">Full-size SUVs</h5>
+		<hr>
+		
+				<figure class="test1">
+			<img src="third/escalade1.png" alt="Cadillac Escalade">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2016 Cadillac Escalade</li>
+					<li>Fuel economy (City/Highway): 15/21-22</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: V8</li>
+					<li>Total seating: 7</li>
+					<li>Transmision: 8 speed semi-automatic</li>
+					<li>Drive wheel type: Rear wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			<figure class="test1">
+			<img src="third/gl-class-1.png" alt="Mercedes-Benz GL-Class">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2015 Mercedes-Benz GL-Class</li>
+					<li>Fuel economy (City/Highway): 13-19/17-26</li>
+					<li>Engine type: Diesel</li>
+					<li>Cylinders: V6</li>
+					<li>Total seating: 7</li>
+					<li>Transmision: 7 speed semi-automatic</li>
+					<li>Drive wheel type: All wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			<figure class="test1">
+			<img src="third/lx1.png" alt="Lexus LX">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2014 Lexus LX</li>
+					<li>Fuel economy (City/Highway): 16-19/23-24</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: V8</li>
+					<li>Total seating: 8</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: Four wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+		<hr>
+		<h5 id="mini">Minivans</h5>
+		<hr>
+		
+				<figure class="test1" id="transit">
+			<img src="third/transit1.png" alt="Ford Transit Passenger Wagon">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2017 Ford Transit Passenger Wagon</li>
+					<li>Fuel economy (City/Highway): 14/19</li>
+					<li>Engine type: Flex-fuel (ffv)</li>
+					<li>Cylinders: V6</li>
+					<li>Total seating: 8</li>
+					<li>Transmision: 6 speed semi-automatic</li>
+					<li>Drive wheel type: Rear wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			
+				<figure class="test1">
+			<img src="third/pacifica1.png" alt="Chrysler Pacifica">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2017 Chrysler Pacifica</li>
+					<li>Fuel economy (City/Highway): 18/28</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: V6</li>
+					<li>Total seating: 7</li>
+					<li>Transmision: 9 speed semi-automatic</li>
+					<li>Drive wheel type: Front wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			
+			<figure class="test1" id="express">
+			<img src="third/express1.png" alt="Chevrolet Express Passenger Van">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2016 Chevrolet Express Passenger Van</li>
+					<li>Fuel economy (City/Highway): 19/25</li>
+					<li>Engine type: Flex-fuel (ffv)</li>
+					<li>Cylinders: V8</li>
+					<li>Total seating: 12</li>
+					<li>Transmision: 6 speed automatic</li>
+					<li>Drive wheel type: Rear wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			
+		<hr>
+		<h5 id="pick">Pickup Trucks</h5>
+		<hr>
+		
+				<figure class="test1">
+			<img src="third/1500-1.png" alt="Ram 1500">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2014 Ram 1500</li>
+					<li>Fuel economy (City/Highway): 13-20/19-28</li>
+					<li>Engine type: Flex-fuel (ffv)</li>
+					<li>Cylinders: V6</li>
+					<li>Total seating: 2-6</li>
+					<li>Transmision: 8 speed semi-automatic</li>
+					<li>Drive wheel type: Rear wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+		
+		<figure class="test1" id="colorado">
+			<img src="third/colorado1.png" alt="Chevrolet Colorado">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2016 Chevrolet Colorado</li>
+					<li>Fuel economy (City/Highway): 15-22/17-31</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 2-5</li>
+					<li>Transmision: 6 speed manual</li>
+					<li>Drive wheel type: Rear wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+			
+			<figure class="test1">
+			<img src="third/canyon1.png" alt="GMC Canyon">
+			<figcaption>
+				<ul class="test2">
+					<li class="spec">2015 GMC Canyon</li>
+					<li>Fuel economy (City/Highway): 15-20/17-27</li>
+					<li>Engine type: Gas</li>
+					<li>Cylinders: Inline 4</li>
+					<li>Total seating: 2-5</li>
+					<li>Transmision: 6 speed manual</li>
+					<li>Drive wheel type: Rear wheel drive</li>
+				</ul>	
+			</figcaption>
+			</figure>
+		
+		
+		</article>
+		
+		</main>	
+		<hr>
+		<footer>
+		<div class="left">
+		<h3 id="lheading">Alternate links</h3>
+			<ol>
+				
+				<li class="bl"><a href="index.html" class="bla u">Home</a></li>
+				<li class="bl"><a href="about.html" class="bla u">About this website</a></li>
+				<li class="bl"><a href="key.html" class="bla u">Factors to consider</a></li>
+				<li class="bl"><a href="first-set.html" class="bla u">Years 2006-2009</a></li>
+				<li class="bl"><a href="second-set.html" class="bla u">Years 2010-2013</a></li>
+				<li class="bl"><a href="third-set.html" class="bla u">Years 2014-2017</a></li>
+				<li class="bl"><a href="contact.html" class="bla u">Contact Us</a></li>
+			</ol>
+		</div>
+				
+		   <p class="right">
+		   <span>
+		   <a href="http://validator.w3.org/check?uri=referer" class="none">
+			<img src="valid_html5.gif" alt="Html Validator image"></a>
+			&nbsp;
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" class="none">
+			<img src="valid_css.gif" alt="CSS validator image" /></a>
+			</span>
+			<br>
+			<span class="conclusion">
+			Website Creator: Amit Kohli
+			<br>
+			Email:  <a href="mailto:amitkohli12@yahoo.com" title="Click to open default mail client">amitkohli12@yahoo.com</a>
+			<br>
+			&copy; 2016 The Car Buyer's Guide Inc. All rights reserved.
+			</span>
+			
+			
+			</p>
+		
+			
+			
+			
+		</footer>
+		</div>
+	</body>
