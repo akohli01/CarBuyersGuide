@@ -1,152 +1,79 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	
-	<head>
-		<title>About this website</title>
-		<meta charset="UTF-8">
-		<meta name="description" content="This webpage acts as a site map for carshelp.info.">
-		<meta name="keywords"   content="Site map, Purpose of creation, About this website">
-		<meta name="author" content="Amit Kohli">
-		<link rel="icon" type="image/png" href="../res/images/favicon-32x32.png" />
-		<link rel="stylesheet" type="text/css" href="../css3/styles.css">
-		
-			<script type="text/javascript">
-				var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 
-				function GetClock(){
-				var d=new Date();
-				var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
-				if(nyear<1000) nyear+=1900;
+<head>
+    <title>About this website</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This webpage acts as a site map for carshelp.info.">
+    <meta name="keywords" content="Site map, Purpose of creation, About this website">
+    <meta name="author" content="Amit Kohli">
+    <link rel="icon" type="image/png" href="../res/images/favicon-32x32.png"/>
+    <link rel="stylesheet" type="text/css" href="../css3/styles.css">
+    <script src="../javascript/clock.js"></script>
+</head>
 
-				var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+<body id="wrapper">
+<div id="middle">
+    <header w3-include-html="header.html">
 
-				if(nhour==0){ap=" AM";nhour=12;}
-				else if(nhour<12){ap=" AM";}
-				else if(nhour==12){ap=" PM";}
-				else if(nhour>12){ap=" PM";nhour-=12;}
+    </header>
 
-				if(nmin<=9) nmin="0"+nmin;
-				if(nsec<=9) nsec="0"+nsec;
+    <main>
 
-				document.getElementById('date').innerHTML=""+tmonth[nmonth]+" "+ndate+", "+nyear+" ";
-				document.getElementById('clock').innerHTML=" "+nhour+":"+nmin+":"+nsec+ap+"";
-				}
+        <h2 class="lefft">About This Website</h2>
+        <div id="about">
+            <p class="wid"><b class="size">Purpose of creation:</b> This website was created to help any car buyers
+                (though having a license and good credit score would be a bonus) regardless of age,
+                gender, education, or socio-economic status find cars based on their preferences.
+                Cars ranging from the years 2006-2017 are listed on this site. If you would like to submit feedback,
+                please do so on the Contact Us webpage or email me directly using the email at the bottom of this
+                webpage.
+                Thank you and enjoy this website.
 
+            </p>
 
+            <p class="wid"><b class="size">Home page:</b> The Home page consists of our top car picks. The car pictures
+                range from
+                Years 2016-2017. Each picture contains a link to the corresponding year page (example: if a car is from
+                the year
+                2008, the picture on the home page will link to a section on the Years 2006-2009 page.) The
+                corresponding year page
+                will have more details on the car.
+            </p>
 
-				window.onload=function(){
-				GetClock();
-				setInterval(GetClock,1000);
-				}
-</script>
-	</head>
-	
+            <p class="wid"><b class="size">Factors to consider:</b> This webpage contains key factors to review before
+                purchasing a car. Some key factors
+                listed are mileage, MPG, price, and fuel type. Each key factor is explained in more detail. In addition,
+                a
+                sample table is provided in order to aid you when purchasing a car.
+            </p>
 
-	<body id="wrapper">
-		<div id="middle">
-		<header>
-			<a href="index.html"><img src="../res/images/car.png" alt="Company logo" id="left" title="Link to home page"></a>
-			<div id="timestamp">
-			<div id="date"></div>
-			<div id="clock"></div>
-			</div>
-			<h1>The Car Buyer's Guide</h1>
-			<h3 id="h3">Years 2006-2017</h3>
-			
-			<ul class="ull">
-				<li class="lli"><a href="index.html" class="red">Home</a></li>
-				<li class="lli"><a href="about.html" class="red">About this website</a></li>
-				<li class="lli"><a href="key.html" class="red">Factors to consider</a></li>
-				<li class="lli"><a href="first-set.html" class="red">Years 2006-2009</a></li>
-				<li class="lli"><a href="second-set.html" class="red">Years 2010-2013</a></li>
-				<li class="lli"><a href="third-set.html" class="red">Years 2014-2017</a></li>
-				<li class="lli"><a href="contact.html" class="red">Contact Us</a></li>
-			</ul>
-			
-		</header>
-		
-		<main>
-		
-			<h2 class="lefft">About This Website</h2>
-		<div id="about">
-			<p class="wid"><b class="size">Purpose of creation:</b> This website was created to help any car buyers
-				(though having a license and good credit score would be a bonus) regardless of age,
-				  gender, education, or socio-economic status find cars based on their preferences.
-				  Cars ranging from the years 2006-2017 are listed on this site. If you would like to submit feedback,
-				  please do so on the Contact Us webpage or email me directly using the email at the bottom of this webpage.
-				  Thank you and enjoy this website.
-				  	
-			</p>
-			
-			<p class="wid"><b class="size">Home page:</b> The Home page consists of our top car picks. The car pictures range from
-			Years 2016-2017. Each picture contains a link to the corresponding year page (example: if a car is from the year
-			2008, the picture on the home page will link to a section on the Years 2006-2009 page.) The corresponding year page
-			will have more details on the car.
-			</p>
-			
-			<p class="wid"><b class="size">Factors to consider:</b> This webpage contains key factors to review before purchasing a car. Some key factors
-			 listed are mileage, MPG, price, and fuel type. Each key factor is explained in more detail. In addition, a 
-			 sample table is provided in order to aid you when purchasing a car.
-			 </p>
-			 
-			 <p class="wid"><b class="size">Years 2006-2009:</b> On this page, cars from the years 2006-2009 will be displayed with their specifications.
-			 Car categories will range from compact cars to full-size SUVs and then to pickup trucks.
-			 </p>
-			 
-			 <p class="wid"><b class="size">Years 2010-2013:</b> On this page, cars from the years 2010-2013 will be displayed with their specifications.
-			 Car categories will range from compact cars to full-size SUVs and then to pickup trucks.
-			 </p>
-			 
-			 <p class="wid"><b class="size">Years 2014-2017:</b> On this page, cars from the years 2014-2017 will be displayed with their specifications.
-			 Car categories will range from compact cars to full-size SUVs and then to pickup trucks.
-			 </p>
-			
-			<p class="wid" id="bot"><b class="size">Contact Us:</b> This page contains our contact information and a feedback form. Let us know how well we are doing
-			and how we can aid you better in your journey to purchase a car.
-			 </p>
-		</div>
-		</main>
-		<hr>
-		<footer>
-		<div class="left">
-		<h3 id="lheading">Alternate links</h3>
-			<ol>
-				
-				<li class="bl"><a href="index.html" class="bla u">Home</a></li>
-				<li class="bl"><a href="about.html" class="bla u">About this website</a></li>
-				<li class="bl"><a href="key.html" class="bla u">Factors to consider</a></li>
-				<li class="bl"><a href="first-set.html" class="bla u">Years 2006-2009</a></li>
-				<li class="bl"><a href="second-set.html" class="bla u">Years 2010-2013</a></li>
-				<li class="bl"><a href="third-set.html" class="bla u">Years 2014-2017</a></li>
-				<li class="bl"><a href="contact.html" class="bla u">Contact Us</a></li>
-			</ol>
-		</div>
-			
-		   <p class="right">
-		   <span>
-		   <a href="http://validator.w3.org/check?uri=referer" class="none">
-			<img src="../res/images/valid_html5.gif" alt="Html Validator image"></a>
-			&nbsp;
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" class="none">
-			<img src="../res/images/valid_css.gif" alt="CSS validator image" /></a>
-			</span>
-			<br>
-			<span class="conclusion">
-			Website Creator: Amit Kohli
-			<br>
-			Email:  <a href="mailto:amitkohli12@yahoo.com" title="Click to open default mail client">amitkohli12@yahoo.com</a>
-			<br>
-			&copy; 2016 The Car Buyer's Guide Inc. All rights reserved.
-			</span>
-			
-			
-			</p>
-		
-		
-			
-			
-			
-		</footer>
-		</div>
-	</body>
+            <p class="wid"><b class="size">Years 2006-2009:</b> On this page, cars from the years 2006-2009 will be
+                displayed with their specifications.
+                Car categories will range from compact cars to full-size SUVs and then to pickup trucks.
+            </p>
+
+            <p class="wid"><b class="size">Years 2010-2013:</b> On this page, cars from the years 2010-2013 will be
+                displayed with their specifications.
+                Car categories will range from compact cars to full-size SUVs and then to pickup trucks.
+            </p>
+
+            <p class="wid"><b class="size">Years 2014-2017:</b> On this page, cars from the years 2014-2017 will be
+                displayed with their specifications.
+                Car categories will range from compact cars to full-size SUVs and then to pickup trucks.
+            </p>
+
+            <p class="wid" id="bot"><b class="size">Contact Us:</b> This page contains our contact information and a
+                feedback form. Let us know how well we are doing
+                and how we can aid you better in your journey to purchase a car.
+            </p>
+        </div>
+    </main>
+    <hr>
+    <footer w3-include-html="footer.html">
+
+    </footer>
+</div>
+<script src="../javascript/includeHTML.js"></script>
+</body>
